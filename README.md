@@ -1,5 +1,33 @@
 # 2.13inch e-Paper HAT V2 Setup Guide for Raspberry Pi OS Lite
 
+## Table of Contents
+1. [What You'll Need](#what-youll-need)
+2. [Initial Setup](#initial-setup)
+   - [Flash Raspberry Pi OS Lite (Headless Setup)](#1-flash-raspberry-pi-os-lite-headless-setup)
+   - [Connect via SSH](#2-connect-via-ssh)
+   - [Initial Configuration via SSH](#3-initial-configuration-via-ssh)
+   - [Enable SPI Interface (via SSH)](#2-enable-spi-interface-via-ssh)
+   - [Update System (via SSH)](#3-update-system-via-ssh)
+3. [Hardware Connection](#hardware-connection)
+   - [Pin Connections (HAT Version)](#pin-connections-hat-version)
+4. [Software Installation (All via SSH)](#software-installation-all-via-ssh)
+   - [Install Required Packages](#1-install-required-packages)
+   - [Install BCM2835 Library](#2-install-bcm2835-library-c-library---optional)
+   - [Install WiringPi](#3-install-wiringpi-optional)
+   - [Install Python Libraries](#4-install-python-libraries)
+5. [Get the Demo Code (via SSH)](#get-the-demo-code-via-ssh)
+6. [Basic Usage Examples (via SSH)](#basic-usage-examples-via-ssh)
+7. [Display Specifications](#display-specifications)
+8. [Troubleshooting](#troubleshooting)
+   - [SSH Connection Issues](#ssh-connection-issues)
+   - [Common e-Paper Issues](#common-e-paper-issues)
+   - [Remote Debugging Tips](#remote-debugging-tips)
+9. [Performance Tips](#performance-tips)
+10. [Advanced Features](#advanced-features)
+11. [Project Ideas](#project-ideas)
+12. [Additional Resources](#additional-resources)
+13. [Quick Commands Reference](#quick-commands-reference)
+
 ## What You'll Need
 - Raspberry Pi (any model with 40-pin GPIO header)
 - 2.13inch e-Paper HAT V2 (Waveshare)
